@@ -125,5 +125,6 @@ User Instructions: Please provide the full text of the news article you would li
             )
 
             response = chat.choices[0].message.content
-            print("Assistant : " + response)
+            # st.write("Assistant : " + response)
             struct.append({"role": "assistant", "content": response})
+            st.write(response)
